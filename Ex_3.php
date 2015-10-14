@@ -29,7 +29,7 @@
                 
                 if (isset($_GET['point'])) {
                   print date("H:i:s");
-                  header('Refresh: 0.3; URL=/Ex_3.php?');
+                  header('Refresh: 1; URL=/Ex_3.php?');
                 }
                 else{
                   print date('H');
@@ -37,7 +37,7 @@
                   print date('i');
                   print '<span class="h">:</span>';
                   print date('s');
-                  header('Refresh: 0.3; URL=/Ex_3.php?point=1');
+                  header('Refresh: 1; URL=/Ex_3.php?point=1');
                 }
               }
               else {
