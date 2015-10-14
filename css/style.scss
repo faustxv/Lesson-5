@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "Open D";
+    src: url("/fonts/digital-7.regular.ttf");
+}
+body{
+	background-color: #3A3A3A;
+}
+.container{
+	width: 100%;
+	height: 400px;
+	position: relative;
+	.clock{
+		background-color: rgb(115, 115, 115);
+		position: absolute;
+		bottom: 18px;
+		width: 40%;
+		height: 200px;
+		left: 27%;
+		border: 5px solid #8C8C8C;
+		border-radius: 15px;
+		.digital{
+			position: absolute;
+			width: 90%;
+			height: 180px;
+			background-color: #000;
+			border-radius: 10px;
+			border: 2px solid #676767;
+			top: 5px;
+			left: 5px;
+			span p{
+				text-align: center;
+				width: 100%;
+				position: absolute;
+				top: 15px;
+				color:#FBFF00;
+				text-shadow: 0 0 3px #FBFF00; 
+			}
+			h1{
+				text-align: center;
+				width: 100%;
+				font-family: "Open D";
+				position: absolute;
+				top: -4px;
+				color:#FBFF00;
+				text-shadow: 0 0 30px #FBFF00;
+				font-size: 150px;
+ 
+				}
+			}
+		.h{
+			color:#635E5E;
+			text-shadow: 0 0 30px #635E5E; 
+		}
+		.but{
+			position: absolute;
+			width: 8%;
+			top: 10px;
+			right: 5px;
+			.btn{
+				height: 170px;
+				width: 100%;
+				background-color: #3A3A3A;
+				border-color: #FBFF00;
+				box-shadow: 0 0 5px #FBFF00;
+				span{
+					color: #FBFF00;
+					text-shadow: 0 0 4px #FBFF00; 
+				}
+			}
+		}
+	}
+}
