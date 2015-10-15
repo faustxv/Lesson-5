@@ -26,11 +26,7 @@
                 if (isset($_GET['but'])) {
                   header('location:/Ex_3.php?status=stop');
                 } 
-                print date('H');
-                print '<span class="h">:</span>';
-                print date('i');
-                print '<span class="h">:</span>';
-                print date('s');
+                print (''.date('H').'<span class="h">:</span>'.date('i').'<span class="h">:</span>'.date('s').'');
                 header('Refresh: 1; URL=/Ex_3.php');
               }
               else {
