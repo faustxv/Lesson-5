@@ -20,7 +20,7 @@ body {
     .container .clock .digital {
       position: absolute;
       width: 90%;
-      height: 180px;
+      height: 95%;
       background-color: #000;
       border-radius: 10px;
       border: 2px solid #676767;
@@ -41,10 +41,24 @@ body {
         top: -4px;
         color: #FBFF00;
         text-shadow: 0 0 30px #FBFF00;
-        font-size: 150px; }
+        font-size: 11em; }
     .container .clock .h {
-      color: #635E5E;
-      text-shadow: 0 0 30px #635E5E; }
+      -webkit-animation: blink 2s linear infinite;
+      animation: blink 2s linear infinite; }
+@-webkit-keyframes blink {
+  0% {
+    color: #635E5E; }
+  50% {
+    color: #FBFF00; }
+  100% {
+    color: #635E5E; } }
+@keyframes blink {
+  0% {
+    color: #635E5E; }
+  50% {
+    color: #FBFF00; }
+  100% {
+    color: #635E5E; } }
     .container .clock .but {
       position: absolute;
       width: 8%;

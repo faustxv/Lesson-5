@@ -24,7 +24,7 @@
     		$login = 'admin';
     		$pass  = 'qwerty';
     		session_start();
-    		if (isset($_POST['sign_out'])) {
+    		if (isset($_GET['sign_out'])) {
     			session_destroy();
 					header('location:/Ex_1.php' );
     		}
@@ -35,7 +35,7 @@
     		if (isset($_SESSION['login'])&& isset($_SESSION['pass'])) {
     		 	if ($_SESSION['login'] == $login && $_SESSION['pass'] == $pass) {
     				echo '<h1>Welcome!</h1>';
-    				echo '<form method="POST"><button type="submit" name="sign_out" class="btn btn-default">Sign out</button></form>';
+    				echo '<form method="POST"><a href="/Ex_1.php?sign_out=1" class="btn btn-default">Sign out</a></form>';
     			}
     			else{ 
     				echo 'Wrong username or password.<br>';

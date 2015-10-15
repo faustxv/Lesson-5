@@ -24,26 +24,18 @@
             <?php
               if (!isset($_GET['status'])) {
                 if (isset($_GET['but'])) {
-                  header('location:/Ex_3.php?');
+                  header('location:/Ex_3.php?status=stop');
                 } 
-                
-                if (isset($_GET['point'])) {
-                  print date("H:i:s");
-                  header('Refresh: 1; URL=/Ex_3.php?');
-                }
-                else{
-                  print date('H');
-                  print '<span class="h">:</span>';
-                  print date('i');
-                  print '<span class="h">:</span>';
-                  print date('s');
-                  header('Refresh: 1; URL=/Ex_3.php?point=1');
-                }
+                print date('H');
+                print '<span class="h">:</span>';
+                print date('i');
+                print '<span class="h">:</span>';
+                print date('s');
+                header('Refresh: 1; URL=/Ex_3.php');
               }
               else {
                 print date("H:i:s");
               }
-
             ?>
           </h1>
         </div>
