@@ -2,7 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <!-- <meta http-equiv="refresh" content="1"> -->
+    <?php 
+      if (!isset($_GET['status'])){
+        echo '<meta http-equiv="refresh" content="0.85">';
+      }
+    ?>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Clock</title>
@@ -27,7 +31,6 @@
                   header('location:/Ex_3.php?status=stop');
                 } 
                 print (''.date('H').'<span class="h">:</span>'.date('i').'<span class="h">:</span>'.date('s').'');
-                header('Refresh: 1; URL=/Ex_3.php');
               }
               else {
                 print date("H:i:s");
